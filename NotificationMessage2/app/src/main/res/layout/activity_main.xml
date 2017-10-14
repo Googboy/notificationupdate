@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.notificationmessage2.MainActivity">
+
+    <Button
+        android:id="@+id/btnDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="默认通知(已被抛弃，但是通用)"/>
+
+    <Button
+        android:id="@+id/btnDefaultAPI11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notifiationMethod"
+        android:text="默认通知(API11之后可用)"/>
+
+    <Button
+        android:id="@+id/btnDefaultAPI16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="默认通知(API16之后可用)"/>
+
+    <Button
+        android:id="@+id/btnSelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="自定义通知"/>
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="notificationMethod"
+        android:text="清除通知"/>
+</LinearLayout>
